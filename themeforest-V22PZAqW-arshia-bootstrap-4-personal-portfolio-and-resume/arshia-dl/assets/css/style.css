@@ -562,6 +562,7 @@ canvas.particles-js-canvas-el {
          Services
 -------------------------*/
 .services .services-item {
+    cursor: pointer;
     padding: 30px 10px;
     margin-top: 30px;
 }
@@ -1518,3 +1519,4 @@ canvas.particles-js-canvas-el {
 .arshia-dark.mono .menu-toggler i{
     color: #dedede !important;
 }
+ul.a {list-style-type: disc;}

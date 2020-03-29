@@ -55,6 +55,13 @@ $("#menu > li a").on("click" , function () {
     $('#main').children($id).addClass('active');
 });
 
+$("#hire-us").on("click" , function () {
+    $("#main > section.active, #menu > li a").removeClass("active");
+    $(this).addClass('active');
+    var $id = $(this).attr('href');
+    $('#main').children($id).addClass('active');
+});
+
 // -------------------------------------------------------------
 //   Color Panel
 // -------------------------------------------------------------
@@ -342,6 +349,7 @@ function sendEmail() {
                 }
             },
             error: function(xhr) {
+                console.log("xhr oh my goodness", xhr);
                 $('#submit-btn').html('Submit');
                 $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
                 $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');

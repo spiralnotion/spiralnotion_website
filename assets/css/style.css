@@ -497,6 +497,12 @@ header .navbar-brand b {
 .hero-01 .hero-content{
     color: #343a40;
 }
+.hero-01 .hero-content .mb-3{
+    font-size: 2rem;
+}
+.hero-01 .hero-content .mb-0{
+    font-size: 1.1rem;
+}
 .hero-02 .hero-content,.hero-03 .hero-content{
     color: #fff;
 }
@@ -1044,7 +1050,7 @@ canvas.particles-js-canvas-el {
 -------------------------*/
 @media (max-width: 1199px){
     .hero-01{
-        background-position: center;
+        background-position: 65% 50%;
     }
     .menu-toggler.open{
         left: 105px;

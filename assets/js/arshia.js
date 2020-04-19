@@ -62,6 +62,13 @@ $("#hire-us").on("click" , function () {
     $('#main').children($id).addClass('active');
 });
 
+$("#spiral-logo").on("click" , function () {
+    $("#main > section.active, #menu > li a").removeClass("active");
+    $(this).addClass('active');
+    var $id = $(this).attr('href');
+    $('#main').children($id).addClass('active');
+});
+
 // -------------------------------------------------------------
 //   Color Panel
 // -------------------------------------------------------------
@@ -199,11 +206,11 @@ function portfolioPopup() {
     if (('.portfolio-items').length > 0) {
         $('.portfolio-items').each(function() {
             $(this).magnificPopup({
-                delegate: '.js-zoom-gallery',
-                type: 'image',
-                gallery: {
-                    enabled:true
-                }
+                delegate: '.js-zoom-gallery'
+                // type: 'image',
+                // gallery: {
+                //     enabled:true
+                // }
             });
         });
     }

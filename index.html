@@ -323,7 +323,7 @@
         <!--   Header Start -->
         <header>
             <div class="header-navbar h-100">
-                <img class="navbar-brand" href="#" src="imgs/logo_small.jpg" id="spiral-logo"></img>
+                <img class="navbar-brand" href="#hero" src="imgs/logo_small.jpg" id="spiral-logo"></img>
                 <ul class="list-group menu text-center" id="menu">
                     <li class="list-group-item"><a class="active" href="#hero"><i class="lni-home"></i><span>home</span></a></li>
                     <li class="list-group-item"><a href="#about"><i class="lni-user"></i><span>about</span></a></li>
@@ -637,16 +637,12 @@
                             <div class="col-lg-4 portfolio-item uiux">
                                 <div class="image-border">
                                     <div class="portfolio-item-content">
-                                        <img src="http://placehold.it/600x452" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
-                                                    <a href="http://placehold.it/600x452" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
+                                        <div class="js-zoom-gallery" data-toggle="modal" data-target="#portfolio-single">
+                                            <img src="http://placehold.it/600x452" alt="/" class="img-fluid">
+                                            <div class="img-overlay text-center js-zoom-gallery" data-toggle="modal" data-target="#portfolio-single">
+                                                <div class="img-overlay-content">
+                                                    <h5 class="mt-3 mb-0">My Work</h5>
                                                 </div>
-                                                <h5 class="mt-3 mb-0">My Work</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1041,7 +1037,7 @@
                                         </div>
                                         <div class="col-sm-12 mt-4 text-left">
                                             <div class="button-border">
-                                                <a href="javascript:void(0)" class="pill-button" id="submit-btn" onclick="sendEmail()">Send Message</a>
+                                                <a href="mailto:j_tsang@yahoo.com" class="pill-button" id="submit-btn" onclick="sendEmail()">Send Message</a>
                                             </div>
                                             <div id="message" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" >
                                                 <div class="toast-body d-inline-block"></div>

@@ -349,7 +349,7 @@
                         <div class="row justify-content-center hero-item">
                             <div class="col-lg-12">
                                 <div class="hero-content">
-                                    <h1 class="mb-3">We are Spiral Notion</h1>
+                                    <h1 class="mb-3">We are SPIRAL NOTION</h1>
                                     <h4 class="text-capitalize mb-0"><span class="base-color">Your  </span> <span class="element" data-elements="Design and Marketing Solution."></span></h4>
                                     <p class="max-width-450 mx-0 my-4">Spiral Notion Interactive is a full-service digital agency that focuses on digital marketing, graphic design, UI/UX design, and illustration.</p>
                                     <ul class="list-inline hero-social">
@@ -380,6 +380,32 @@
                     </div>
                 </div>
             </div>
+            <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+          attribution=install_email
+          page_id="272147513609130"
+          theme_color="#6699cc"
+            logged_in_greeting="Oh hey! Thanks for visiting our site! Let us know how can we assist you today."
+            logged_out_greeting="Oh hey! Thanks for visiting our site! Let us know how can we assist you today.">
+        </div>
         </section>
         <!--  Hero End  -->
 

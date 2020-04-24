@@ -26,6 +26,62 @@
 ************************/
 
 
+
+#town{
+    display:inline;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #9B7B4F;
+}
+#pasadena{
+    display:inline;
+   font-style: normal;
+   font-weight: bold;
+   font-size:32px;
+   line-height: 48px;
+   color: #A9BE40;
+}
+#dwTitleDetail{
+    
+
+    text-align:center;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}
+.dwIcon{
+    width: 100%;
+    height: auto;
+    
+}
+.dwBody{
+    width: 100%;
+    height: 1200px;
+   
+}
+
+.needFlex{
+    display: flex;
+    align-items: center;
+}
+
+#dwFinalDetail{
+    
+font-family: Muli;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+
+}
+
 /*-------------------------
          GENERAL
 -------------------------*/

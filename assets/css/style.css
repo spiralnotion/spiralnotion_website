@@ -1222,6 +1222,9 @@ canvas.particles-js-canvas-el {
 .blog-content .list-inline-item:not(:last-child) {
     margin-right: 3rem;
 }
+.blog-content {
+    padding-top: 5px;
+}
 .blog-image{
     position: relative;
     display: inline-block;

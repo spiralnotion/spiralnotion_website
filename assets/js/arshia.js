@@ -34,6 +34,24 @@ $window.on("load", (function() {
     portfolioIsotop();
 }));
 
+// ===== Scroll to Top ==== 
+$("#main > section").scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+
+$(document).ready(function(){
+    $("#return-to-top").click(function() {
+        $(".active").animate({ 
+            scrollTop: 0 
+        }, "slow");
+        return false;
+    });
+});
+
 /*-------------------------
         Color Scheme
 -------------------------*/

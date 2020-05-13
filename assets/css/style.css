@@ -59,6 +59,7 @@
 
 #cookie-close {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #return-to-top {

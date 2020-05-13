@@ -39,6 +39,10 @@
     position: absolute;
 }
 
+.fa-weixin {
+    cursor: pointer;
+}
+
 .cookiebanner {
     position: fixed;
     left: 0px;

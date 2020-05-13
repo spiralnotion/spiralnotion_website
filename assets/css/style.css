@@ -39,6 +39,9 @@
     position: absolute;
 }
 
+.fa {
+    font-size: larger;
+}
 .fa-weixin {
     cursor: pointer;
 }

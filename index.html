@@ -82,7 +82,6 @@
         <!--  Custom Style CSS  -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <script type="text/javascript" id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js" data-linkmsg=" "></script>
     <body data-spy="scroll" data-target="#scrollspy" data-offset="1">
         <a id="return-to-top"><i class="lni-chevron-up scroll-top"></i></a>
     <!-- Load Facebook SDK for JavaScript -->
@@ -1669,9 +1668,10 @@ No, there is no long-term contract required. There will be a short-term minimum 
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="imgs/qr_code.png" target="_blank">
-                                                <i class="fa fa-weixin"></i>
-                                            </a>
+                                            <i class="fa fa-weixin"></i>
+                                            <div class="dropdown-weixin">
+                                                <img src="imgs/qr_code.png"></img>
+                                            </div>
                                         </li>
                                         <li class="list-inline-item">
                                             <a href="https://www.instagram.com/spiralnotion/" target="_blank">
@@ -2599,6 +2599,12 @@ No, there is no long-term contract required. There will be a short-term minimum 
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!--  Custom JS  -->
     <script src="assets/js/arshia.js"></script>
-
+    <div class="cookiebanner">
+        <span>By continuing to use our site, you agree to our 
+            <a class="base-color" href="javascript:void(0)" data-toggle="modal" data-target="#terms-conditions">Terms & Conditions</a> and 
+            <a class="base-color" href="javascript:void(0)" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>
+            <span id="cookie-close">Close</span>
+        </span>
+    </div>
     </body>
 </html>

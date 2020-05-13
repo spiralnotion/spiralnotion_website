@@ -50,6 +50,9 @@ $(document).ready(function(){
         }, "slow");
         return false;
     });
+    $("#cookie-close").click(function() {
+        $(".cookiebanner").fadeOut(200);
+    });
 });
 
 /*-------------------------

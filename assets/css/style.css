@@ -25,6 +25,47 @@
     16.RESPONSIVE
 ************************/
 
+.dropdown-weixin {
+    display: none;
+}
+
+.dropdown-weixin img {
+    width: 100%;
+}
+
+.fa-weixin:hover + .dropdown-weixin {
+    display: block;
+    max-width: 200px;
+    position: absolute;
+}
+
+.fa-weixin {
+    cursor: pointer;
+}
+
+.cookiebanner {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    min-height: 21px;
+    z-index: 255;
+    background: rgb(0, 0, 0);
+    color: rgb(221, 221, 221);
+    line-height: 21px;
+    padding: 5px 16px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    bottom: 0px;
+    opacity: .7;
+}
+
+#cookie-close {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #return-to-top {
     position: fixed;
     cursor: pointer;

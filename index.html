@@ -64,8 +64,8 @@
         <meta name="author" content="Retrina Group" />
 
         <!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/google-api-muli.css">
+		<link rel="stylesheet" href="assets/css/google-api-poppins.css">
 
         <!-- Bootstrap Css -->
         <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -81,35 +81,11 @@
         <link rel="stylesheet" href="assets/css/color/blue-color.css" id="option-color">
         <!--  Custom Style CSS  -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Calendly -->
+        <link rel="stylesheet" href="assets/css/calendly.css">
     </head>
     <body data-spy="scroll" data-target="#scrollspy" data-offset="1">
         <a id="return-to-top"><i class="lni-chevron-up scroll-top"></i></a>
-    <!-- Load Facebook SDK for JavaScript -->
-    <!-- <div id="fb-root"></div>
-    <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v6.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script> -->
-
-    <!-- Your customer chat code -->
-    <!-- <div class="fb-customerchat"
-      attribution=install_email
-      page_id="272147513609130"
-      theme_color="#6699cc"
-        logged_in_greeting="Oh hey! Thanks for visiting our site! Let us know how can we assist you today."
-        logged_out_greeting="Oh hey! Thanks for visiting our site! Let us know how can we assist you today.">
-    </div> -->
 
     <!--  Pre Loader  -->
     <div id="overlayer"></div>
@@ -2508,11 +2484,14 @@ No, there is no long-term contract required. There will be a short-term minimum 
                                         <i class="lni-map-marker size-md"></i>
                                     </div>
                                     <div class="mt-3">
-                                        <h5 class="text-dark mb-0 contact_detail-title">Let's Chat</h5>
+                                        <h5 class="text-dark mb-0 contact_detail-title">Free Consultation</h5>
                                         <!-- Calendly link widget begin -->
-                                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                                        <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-                                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/spiralnotion'});return false;">Book an Appointment with Us</a>
+                                        <script async src="assets/js/calendly-widget.js" type="text/javascript"></script>
+                                        <div class="button-border mt-3 mb-lg-0">
+                                            <a href="imgs/service_lists_eng.jpg" target="_blank" class="pill-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/spiralnotion'});return false;">
+                                                    Book an Appointment
+                                            </a>
+                                        </div>
                                         <!-- Calendly link widget end -->
                                     </div>
                                 </div>

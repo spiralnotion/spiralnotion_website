@@ -15,17 +15,16 @@ $(document).ready(function () {
 
     "use strict";
     colorScheme();
-    ColorPallet();
-    PillMenuToggler();
     menuToggler();
-    sliderOwlCarousel();
     typedJS();
-    skills();
     countUp();
     portfolioPopup();
-    clientCarousel();
-    BlogCarousel();
-
+    // ColorPallet();
+    // PillMenuToggler();
+    // sliderOwlCarousel();
+    // skills();
+    // clientCarousel();
+    // BlogCarousel();
 });
 
 $window.on("load", (function() {
@@ -93,47 +92,47 @@ $("#spiral-logo").on("click" , function () {
 // -------------------------------------------------------------
 //   Color Panel
 // -------------------------------------------------------------
-function ColorPallet() {
+// function ColorPallet() {
 
-    "use strict";
+//     "use strict";
 
-    $("ul.pattern .color1").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/default.css")
-    });
-    $("ul.pattern .color2").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/orange-color.css")
-    });
-    $("ul.pattern .color3").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/blue-color.css")
-    });
-    $("ul.pattern .color4").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/green-color.css")
-    });
-    $("ul.pattern .color5").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/yellow-color.css")
-    });
-    $("ul.pattern .color6").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/pink-color.css")
-    });
-    $("#color-switcher .pallet-button").click(function () {
-        $("#color-switcher .color-pallet").toggleClass('show')
-    })
+//     $("ul.pattern .color1").click(function () {
+//         return $("#option-color").attr("href", "assets/css/color/default.css")
+//     });
+//     $("ul.pattern .color2").click(function () {
+//         return $("#option-color").attr("href", "assets/css/color/orange-color.css")
+//     });
+//     $("ul.pattern .color3").click(function () {
+//         return $("#option-color").attr("href", "assets/css/color/blue-color.css")
+//     });
+//     $("ul.pattern .color4").click(function () {
+//         return $("#option-color").attr("href", "assets/css/color/green-color.css")
+//     });
+//     $("ul.pattern .color5").click(function () {
+//         return $("#option-color").attr("href", "assets/css/color/yellow-color.css")
+//     });
+//     $("ul.pattern .color6").click(function () {
+//         return $("#option-color").attr("href", "assets/css/color/pink-color.css")
+//     });
+//     $("#color-switcher .pallet-button").click(function () {
+//         $("#color-switcher .color-pallet").toggleClass('show')
+//     })
 
-}
+// }
 
 // /*-------------------------
 //     MENU TOGGLER
 // -------------------------*/
-function PillMenuToggler() {
+// function PillMenuToggler() {
 
-    "use strict";
-    $(".overlay-menu-toggler").click(function(){
-        $(".overlay-menu").addClass("show");
-    });
-    $(".overlay-menu").click(function(){
-        $(this).removeClass("show");
-    });
-}
+//     "use strict";
+//     $(".overlay-menu-toggler").click(function(){
+//         $(".overlay-menu").addClass("show");
+//     });
+//     $(".overlay-menu").click(function(){
+//         $(this).removeClass("show");
+//     });
+// }
 
 function  menuToggler() {
     "use strict";
@@ -155,27 +154,27 @@ function  menuToggler() {
 /*-----------------------------
       SLIDER OWL CAROUSEL
 ------------------------------*/
-function sliderOwlCarousel(){
-    $('.hero-03 .owl-carousel').owlCarousel({
-        loop:true,
-        items: 1,
-        nav: false,
-        dots: false,
-        autoplay:true,
-        touchDrag: true,
-        smartSpeed: 5000,
-        animateOut: 'fadeOut',
-        //autoplayHoverPause: true,
-    });
-    $('#hero-slider').on("translate.owl.carousel", function(){
-        setTimeout(function(){
-            $('.hero-slide').removeClass("zoom");
-        }, 1000)
-    });
-    $('#hero-slider').on("translated.owl.carousel", function(){
-        $('.owl-item.active .hero-slide').addClass("zoom");
-    });
-}
+// function sliderOwlCarousel(){
+//     $('.hero-03 .owl-carousel').owlCarousel({
+//         loop:true,
+//         items: 1,
+//         nav: false,
+//         dots: false,
+//         autoplay:true,
+//         touchDrag: true,
+//         smartSpeed: 5000,
+//         animateOut: 'fadeOut',
+//         //autoplayHoverPause: true,
+//     });
+//     $('#hero-slider').on("translate.owl.carousel", function(){
+//         setTimeout(function(){
+//             $('.hero-slide').removeClass("zoom");
+//         }, 1000)
+//     });
+//     $('#hero-slider').on("translated.owl.carousel", function(){
+//         $('.owl-item.active .hero-slide').addClass("zoom");
+//     });
+// }
 /*-------------------------
         TYPED JS
 -------------------------*/
@@ -195,16 +194,16 @@ function typedJS() {
 /*-------------------------
           Skills
 -------------------------*/
-function skills() {
+// function skills() {
 
-    "use strict";
-    var $skillbar = $('.skillbar');
-   $skillbar.each(function () {
-        $(this).find('.skillbar-bar').animate({
-            width: $(this).attr('data-percent')
-        }, 6000);
-    });
-}
+//     "use strict";
+//     var $skillbar = $('.skillbar');
+//    $skillbar.each(function () {
+//         $(this).find('.skillbar-bar').animate({
+//             width: $(this).attr('data-percent')
+//         }, 6000);
+//     });
+// }
 
 /*-------------------------
          Count up
@@ -227,11 +226,11 @@ function portfolioPopup() {
     if (('.portfolio-items').length > 0) {
         $('.portfolio-items').each(function() {
             $(this).magnificPopup({
-                delegate: '.js-zoom-gallery'
-                // type: 'image',
-                // gallery: {
-                //     enabled:true
-                // }
+                delegate: '.js-zoom-gallery',
+                gallery: {
+                    enabled: true,
+                    preload: [0,2]
+                }
             });
         });
     }
@@ -273,115 +272,115 @@ function portfolioIsotop() {
 /*-------------------------
   Testimonial CAROUSEL JS
 -------------------------*/
-function clientCarousel() {
-    $(".testimonial .owl-carousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        stagePadding: 5,
-        nav: false,
-        autoplay: false,
-        dots: true,
-        mouseDrag: true,
-        touchDrag: true,
-        smartSpeed: 700,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            992: {
-                items: 3,
-                nav: false,
-            },
+// function clientCarousel() {
+//     $(".testimonial .owl-carousel").owlCarousel({
+//         loop: true,
+//         margin: 30,
+//         stagePadding: 5,
+//         nav: false,
+//         autoplay: false,
+//         dots: true,
+//         mouseDrag: true,
+//         touchDrag: true,
+//         smartSpeed: 700,
+//         autoplayHoverPause: false,
+//         responsiveClass: true,
+//         responsive: {
+//             0: {
+//                 items: 1,
+//                 nav: false
+//             },
+//             992: {
+//                 items: 3,
+//                 nav: false,
+//             },
 
-        }
-    });
-}
+//         }
+//     });
+// }
 /*-------------------------
      Blog CAROUSEL JS
 -------------------------*/
-function BlogCarousel() {
+// function BlogCarousel() {
 
-    "use strict";
+//     "use strict";
 
-    $(".blog .owl-carousel").owlCarousel({
-        items: 1,
-        nav: false,
-        autoplay: false,
-        loop: true,
-        dots: true,
-        margin: 30,
-        mouseDrag: true,
-        touchDrag: true,
-        smartSpeed: 1000,
-        autoplayHoverPause: true,
+//     $(".blog .owl-carousel").owlCarousel({
+//         items: 1,
+//         nav: false,
+//         autoplay: false,
+//         loop: true,
+//         dots: true,
+//         margin: 30,
+//         mouseDrag: true,
+//         touchDrag: true,
+//         smartSpeed: 1000,
+//         autoplayHoverPause: true,
 
-    });
-}
+//     });
+// }
 /*-------------------------
      AJAX CONTACT FORM
 -------------------------*/
-function validateEmail(email) {
+// function validateEmail(email) {
 
-    "use strict";
+//     "use strict";
 
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
-}
-function sendEmail() {
+//     var re = /\S+@\S+\.\S+/;
+//     return re.test(email);
+// }
+// function sendEmail() {
 
-    "use strict";
+//     "use strict";
 
-    var name     = $('#name').val();
-    var email    = $('#email').val();
-    var subject  = $('#subject').val();
-    var comments = $('#comments').val();
+//     var name     = $('#name').val();
+//     var email    = $('#email').val();
+//     var subject  = $('#subject').val();
+//     var comments = $('#comments').val();
 
-    if(!name){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Name is  required');
-    } else if(!email){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Email is  required');
-    } else if(!validateEmail(email)){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Email is not valid');
-    } else if(!subject){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Subject is  required');
-    }else if(!comments){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Comments is  required');
-    }else {
-        $.ajax({
-            type: 'POST',
-            data: $("#contactForm").serialize(),
-            url:  "sendEmail.php",
-            beforeSend: function() {
-                $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
-            },
-            success: function(data) {
-                $('#submit-btn').html('Submit');
-                var myObj = JSON.parse(data);
-                if(myObj['status']=='Congratulation'){
-                    $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Error'){
-                    $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Warning'){
-                    $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }
-            },
-            error: function(xhr) {
-                console.log("xhr oh my goodness", xhr);
-                $('#submit-btn').html('Submit');
-                $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');
-            },
-        });
-    }
-}
+//     if(!name){
+//         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+//         $('.toast-body').html('Name is  required');
+//     } else if(!email){
+//         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+//         $('.toast-body').html('Email is  required');
+//     } else if(!validateEmail(email)){
+//         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+//         $('.toast-body').html('Email is not valid');
+//     } else if(!subject){
+//         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+//         $('.toast-body').html('Subject is  required');
+//     }else if(!comments){
+//         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+//         $('.toast-body').html('Comments is  required');
+//     }else {
+//         $.ajax({
+//             type: 'POST',
+//             data: $("#contactForm").serialize(),
+//             url:  "sendEmail.php",
+//             beforeSend: function() {
+//                 $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
+//             },
+//             success: function(data) {
+//                 $('#submit-btn').html('Submit');
+//                 var myObj = JSON.parse(data);
+//                 if(myObj['status']=='Congratulation'){
+//                     $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
+//                     $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
+//                 }else if(myObj['status']=='Error'){
+//                     $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
+//                     $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
+//                 }else if(myObj['status']=='Warning'){
+//                     $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
+//                     $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
+//                 }
+//             },
+//             error: function(xhr) {
+//                 console.log("xhr oh my goodness", xhr);
+//                 $('#submit-btn').html('Submit');
+//                 $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
+//                 $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');
+//             },
+//         });
+//     }
+// }

@@ -30,7 +30,8 @@
 }
 
 .dropdown-weixin img {
-    width: 100%;
+    width: 75%;
+    border-radius: 10px;
 }
 
 .fa-weixin:hover + .dropdown-weixin {

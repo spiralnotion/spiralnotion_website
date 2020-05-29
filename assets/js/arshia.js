@@ -68,21 +68,7 @@ function colorScheme(){
 /*-----------------------------------------------------------------------------
                                    FUNCTIONS
 -----------------------------------------------------------------------------*/
-$("#menu > li a").on("click" , function () {
-    $("#main > section.active, #menu > li a").removeClass("active");
-    $(this).addClass('active');
-    var $id = $(this).attr('href');
-    $('#main').children($id).addClass('active');
-});
-
-$("#hire-us").on("click" , function () {
-    $("#main > section.active, #menu > li a").removeClass("active");
-    $(this).addClass('active');
-    var $id = $(this).attr('href');
-    $('#main').children($id).addClass('active');
-});
-
-$("#spiral-logo").on("click" , function () {
+$("#menu > li a, #hire-us, #hire-us-chinese, #spiral-logo").on("click" , function () {
     $("#main > section.active, #menu > li a").removeClass("active");
     $(this).addClass('active');
     var $id = $(this).attr('href');

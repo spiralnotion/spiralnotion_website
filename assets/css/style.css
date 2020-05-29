@@ -15,10 +15,10 @@
     5.OVERLAY MENU
     6.HERO
     7.ABOUT
-    8.RESUME
+    8.SERVICES
     9.PORTFOLIO
     10.CLIENT
-    10.BLOG
+    10.CASES
     11.CONTACT
     14.SINGLE BLOG
     15.SINGLE PORTFOLIO
@@ -1106,7 +1106,7 @@ canvas.particles-js-canvas-el {
 }
 
 /*-------------------------
-         RESUME
+         SERVICES
 -------------------------*/
 .timeline-items{
     padding: 30px;
@@ -1142,7 +1142,7 @@ canvas.particles-js-canvas-el {
     font-size: 14px;
     font-weight: 500;
 }
-.resume h3 i {
+.services h3 i {
     padding-right: 0.75rem;
 }
 /*-------------------------

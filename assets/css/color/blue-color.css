@@ -14,7 +14,7 @@
 .base-color{
     color: #018abe !important;
 }
-.hero-social li a:hover, .blog-link a:hover{
+.hero-social li a:hover,.hero-social li i:hover, .blog-link a:hover{
     color: #017ead !important;
 }
 .bg-base-color {

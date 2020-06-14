@@ -1300,6 +1300,9 @@ canvas.particles-js-canvas-el {
 .portfolio .portfolio-icon button:focus{
     outline: none !important;
 }
+.portfolio .portfolio-container{
+    min-height: 800px;
+}
 /*-------------------------
           BLOG
 -------------------------*/

@@ -42,11 +42,15 @@ $("#main > section").scroll(function() {
     }
 });
 
+function scrollTop() {
+    $(".active").animate({
+        scrollTop: 0 
+    }, "slow");
+}
+
 $(document).ready(function(){
     $("#return-to-top").click(function() {
-        $(".active").animate({ 
-            scrollTop: 0 
-        }, "slow");
+        scrollTop();
         return false;
     });
     $("#cookie-close").click(function() {
@@ -68,11 +72,12 @@ function colorScheme(){
 /*-----------------------------------------------------------------------------
                                    FUNCTIONS
 -----------------------------------------------------------------------------*/
-$("#menu > li a, #hire-us, #hire-us-chinese, #spiral-logo").on("click" , function () {
+$("#menu > li a, #hire-us, #hire-us-chinese, #spiral-logo, .click-to-page").on("click" , function () {
     $("#main > section.active, #menu > li a").removeClass("active");
     $(this).addClass('active');
     var $id = $(this).attr('href');
     $('#main').children($id).addClass('active');
+    scrollTop();
 });
 
 // -------------------------------------------------------------

@@ -14,6 +14,9 @@ var $root = $('html, body');
 $(document).ready(function () {
 
     "use strict";
+    $("#overlayer").delay(500).fadeOut('slow');
+    $(".loader").delay(1000).fadeOut('slow');
+    portfolioIsotop();
     colorScheme();
     menuToggler();
     typedJS();
@@ -26,12 +29,6 @@ $(document).ready(function () {
     // clientCarousel();
     // BlogCarousel();
 });
-
-$window.on("load", (function() {
-    $("#overlayer").delay(500).fadeOut('slow');
-    $(".loader").delay(1000).fadeOut('slow');
-    portfolioIsotop();
-}));
 
 // ===== Scroll to Top ==== 
 $("#main > section").scroll(function() {

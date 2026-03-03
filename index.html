@@ -137,6 +137,15 @@
     <body data-spy="scroll" data-target="#scrollspy" data-offset="1">
         <a id="return-to-top"><i class="lni-chevron-up scroll-top"></i></a>
 
+    <!-- Preloader failsafe: force-hide after 4s in case JS fails to load -->
+    <style>
+      @keyframes forceHide { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+      #overlayer, .loader {
+        animation: forceHide 0.5s ease forwards;
+        animation-delay: 4s;
+      }
+    </style>
+
     <!--  Pre Loader  -->
     <div id="overlayer"></div>
     <span class="loader"></span>
@@ -1243,7 +1252,7 @@
                                                 </li>
                                                 <!-- Item-03 -->
                                                 <li class="mb-2">
-                                                    <span class="ml-1">info@spiralnotion.com</span>
+                                                    <span class="ml-1"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3cacdc5cce3d0d3cad1c2cfcdccd7cacccd8dc0ccce">[email&#160;protected]</a></span>
                                                 </li>
                                                 <!-- Item-04 -->
                                                 <li class="mb-2">
@@ -2829,7 +2838,7 @@ Take a look at how we can help your business grow.</p>
                                     <div class="mt-3">
                                         <h5 class="text-dark mb-0 contact_detail-title">Free Consultation</h5>
                                         <!-- Calendly link widget begin -->
-                                        <script async src="assets/js/calendly-widget.js" type="text/javascript"></script>
+                                        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="assets/js/calendly-widget.js" type="text/javascript"></script>
                                         <div class="button-border mt-3 mb-lg-0">
                                             <a href="javascript:void(0)" class="pill-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/spiralnotion'});return false;">
                                                     Book an Appointment
@@ -2846,7 +2855,7 @@ Take a look at how we can help your business grow.</p>
                                     </div>
                                     <div class="mt-3">
                                         <h5 class="text-dark mb-0">Email Us</h5>
-                                        <small class="text-muted">hello@spiralnotion.com</small>
+                                        <small class="text-muted"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ce4e9e0e0e3ccfffce5feede0e2e3f8e5e3e2a2efe3e1">[email&#160;protected]</a></small>
                                     </div>
                                 </div>
                             </div>
@@ -2873,7 +2882,7 @@ Take a look at how we can help your business grow.</p>
 
 
     <!--  JavaScripts  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--  Bootstrap Js  -->
     <script src="assets/js/bootstrap.js"></script>
     <!--  Type  Js  -->
@@ -2887,13 +2896,4 @@ Take a look at how we can help your business grow.</p>
     <!--  PopUp Js  -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!--  Custom JS  -->
-    <script src="assets/js/arshia.js"></script>
-    <div class="cookiebanner">
-        <span>By continuing to use our site, you agree to our 
-            <a class="base-color" href="javascript:void(0)" data-toggle="modal" data-target="#terms-conditions">Terms & Conditions</a> and 
-            <a class="base-color" href="javascript:void(0)" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>
-            <span id="cookie-close">Close</span>
-        </span>
-    </div>
-    </body>
-</html>
+    <script src="assets/js/arshia.js"></sc

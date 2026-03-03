@@ -2896,4 +2896,44 @@ Take a look at how we can help your business grow.</p>
     <!--  PopUp Js  -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!--  Custom JS  -->
-    <script src="assets/js/arshia.js"></sc
+    <script src="assets/js/arshia.js"></script>
+    <!-- Hash-based navigation: allows direct URLs like #services, #about etc -->
+    <script>
+    (function() {
+        function navigateToHash(hash) {
+            if (!hash) return;
+            var target = hash.replace("#", "");
+            var validSections = ["hero", "about", "services", "portfolio", "cases", "contact"];
+            if (validSections.indexOf(target) === -1) return;
+            $("#main > section.active, #menu > li a").removeClass("active");
+            $("#main > #" + target).addClass("active");
+            $("#menu > li a[href='#" + target + "']").addClass("active");
+        }
+        $(document).ready(function() {
+            // Navigate to hash on page load
+            if (window.location.hash) {
+                navigateToHash(window.location.hash);
+            }
+            // Update URL hash when nav links are clicked
+            $("#menu > li a").on("click", function() {
+                var href = $(this).attr("href");
+                if (href && href.indexOf("#") === 0) {
+                    history.pushState(null, null, href);
+                }
+            });
+            // Handle browser back/forward buttons
+            $(window).on("popstate", function() {
+                navigateToHash(window.location.hash);
+            });
+        });
+    })();
+    </script>
+    <div class="cookiebanner">
+        <span>By continuing to use our site, you agree to our 
+            <a class="base-color" href="javascript:void(0)" data-toggle="modal" data-target="#terms-conditions">Terms &amp; Conditions</a> and 
+            <a class="base-color" href="javascript:void(0)" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>
+            <span id="cookie-close">Close</span>
+        </span>
+    </div>
+    </body>
+</html>
